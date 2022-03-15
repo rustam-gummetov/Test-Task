@@ -9,13 +9,21 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "next": "12.1.0",
+    "babel-plugin-styled-components": "^2.0.6",
+    "express": "^4.17.3",
+    "inputmask": "^5.0.8-beta.17",
+    "next": "^12.1.0",
     "react": "17.0.2",
-    "react-dom": "17.0.2"
+    "react-dom": "17.0.2",
+    "react-input-mask": "^2.0.4",
+    "styled-components": "^5.3.3",
+    "ts-input-mask": "^2.1.0"
   },
   "devDependencies": {
     "@types/node": "17.0.21",
     "@types/react": "17.0.39",
+    "@types/react-input-mask": "^3.0.1",
+    "@types/styled-components": "^5.1.24",
     "eslint": "8.10.0",
     "eslint-config-next": "12.1.0",
     "typescript": "4.6.2"

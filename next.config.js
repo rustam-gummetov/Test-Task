@@ -1,6 +1,12 @@
 /** @type {import('next').NextConfig} */
-const nextConfig = {
-  reactStrictMode: true,
+
+module.exports = {
+  images: {
+    domains: ['promedianews.ru', 'xn--b1amnebili4i.xn--p1ai', 'skesov.ru'],
+  },
+  compiler: {
+    // ssr and displayName are configured by default
+    styledComponents: true,
+  },
 }
 
-module.exports = nextConfig
