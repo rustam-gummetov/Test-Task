@@ -1,7 +1,7 @@
 export let operators = [
   {
     name: "МТС",
-    pictureURL: "https://promedianews.ru/wp-content/uploads/2021/07/podkljuchenie-sim-kart-mts-prodazha-telefonov-i-aksessuarov_1.jpg"
+    pictureURL: "https://cdn2.zp.ru/job/attaches/2019/10/7c/e1/7ce10958ff5a284404937c2c374a5f3e.jpg"
   },
   {
     name: "Beeline",
