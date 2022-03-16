@@ -1,7 +1,7 @@
 export let operators = [
   {
     name: "МТС",
-    pictureURL: "https://cdn2.zp.ru/job/attaches/2019/10/7c/e1/7ce10958ff5a284404937c2c374a5f3e.jpg"
+    pictureURL: "https://media.rabota.ru/processor/logo/original/2019/12/09/mts-roznichnaja-set12-b226d0c6203864e4f050b85ce0006402.jpg"
   },
   {
     name: "Beeline",
