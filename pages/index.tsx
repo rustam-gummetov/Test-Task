@@ -1,5 +1,5 @@
 import { NextRouter, useRouter } from 'next/router'
-import operators from './operators'
+import { operators } from './operators'
 import DrawOperator from './drawOperator'
 import { Container, Title, Grid, Button } from './styles/indexStyles'
 
