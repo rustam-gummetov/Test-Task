@@ -14,9 +14,9 @@ const DrawOperator = ({ operator }: Operator) => {
   const router: NextRouter = useRouter();
 
   return (
-    <ImageContainer onClick={() => router.push("/pay/" + operator.name)} key={operator.name}>
+    <ImageContainer onClick={() => router.push("/pay/" + operator?.name)} key={operator?.name}>
       <Img
-        src={operator.pictureURL}
+        src={operator?.pictureURL}
       />
     </ImageContainer>
   )

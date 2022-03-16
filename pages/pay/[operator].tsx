@@ -1,6 +1,6 @@
 import { NextRouter, useRouter } from 'next/router';
 import { FormEvent, useState } from 'react';
-import { Container, MainTitle, Title, Form, Text, InputMaskContainer, Input, Button, Span } from '../styles/operatorStyles'
+import { Container, MainTitle, Title, Form, Text, InputMaskContainer, Input, Button, Span } from '../../styles/operatorStyles'
 
 const Pay = () => {
     const router: NextRouter = useRouter();

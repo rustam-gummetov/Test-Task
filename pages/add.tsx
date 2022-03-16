@@ -1,7 +1,7 @@
 import { NextRouter, useRouter } from 'next/router';
 import { FormEvent } from 'react';
-import { operators } from './operators'
-import { Container, Title, Form, Text, Input, Button } from './styles/addStyles'
+import { operators } from '../operators/operators'
+import { Container, Title, Form, Text, Input, Button } from '../styles/addStyles'
 
 const AddPage = () => {
     const router: NextRouter = useRouter();

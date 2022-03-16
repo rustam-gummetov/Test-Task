@@ -1,7 +1,7 @@
 import { NextRouter, useRouter } from 'next/router'
-import { operators } from './operators'
+import { operators } from '../operators/operators'
 import DrawOperator from './drawOperator'
-import { Container, Title, Grid, Button } from './styles/indexStyles'
+import { Container, Title, Grid, Button } from '../styles/indexStyles'
 
 const HomePage = () => {
   const router: NextRouter = useRouter();
