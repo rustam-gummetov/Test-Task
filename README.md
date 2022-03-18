@@ -22,5 +22,5 @@ function func1(str, a, b) {
 }
 
 
-2) Web приложение - терминал оплаты мобильного телефона
-<a href="https://test-task-bravedevelopers.vercel.app/" target="_blank">Web-приложение</a>
+2) <a href="https://test-task-bravedevelopers.vercel.app/" target="_blank">Web-приложение</a> - терминал оплаты мобильного телефона
+
