@@ -1,7 +1,8 @@
 import styled, { StyledComponent } from "styled-components"
+import { Colors } from "../colors/colors"
 
 export const Container = styled.div`
-  background-color: #101229;
+  background-color: ${Colors.VeryDarkBlue};
   width: 800px;
   height: auto;
   margin: 20px;
@@ -21,7 +22,7 @@ export const Title = styled.h1`
   color: white;
   margin-left: 20px;
   margin-right: 20px;
-  background: linear-gradient(to left, #e48a40 20%, #d8db10 40%, #d8db10 60%, #e48a40 80%);
+  background: linear-gradient(to left, ${Colors.Orange} 20%, ${Colors.Yellow} 40%, ${Colors.Yellow} 60%, ${Colors.Orange} 80%);
   background-size: 200% auto;
   -webkit-background-clip: text;
   -webkit-text-fill-color: transparent;
@@ -71,7 +72,7 @@ export const Button = styled.button`
   font-size: 30px;
   :hover {
     text-shadow: 
-    0px 1px 0px #b2a98f,
+    0px 1px 0px ${Colors.DarkGrayishOrange},
     0px 3px 10px rgba(0,0,0,0.15),
     0px 5px 2px rgba(0,0,0,0.1),
     0px 7px 30px rgba(0,0,0,0.1);

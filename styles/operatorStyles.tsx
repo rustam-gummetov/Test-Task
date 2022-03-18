@@ -1,12 +1,13 @@
 import styled from "styled-components"
 import InputMask from "react-input-mask";
+import { Colors } from "../colors/colors";
 
 export const MainTitle = styled.h1`
     text-align: center;
     font-size: 60px;
     color: white;
     margin: 20px;
-    background: linear-gradient(to right, #8d4fdf 20%, #31cc98 40%, #31cc98 60%, #8d4fdf 80%);
+    background: linear-gradient(to right, ${Colors.SoftViolet} 20%, ${Colors.LimeGreen} 40%, ${Colors.LimeGreen} 60%, ${Colors.SoftViolet} 80%);
     background-size: 200% auto;  
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -24,14 +25,14 @@ export const MainTitle = styled.h1`
 
     @media (max-width: 600px) {
         font-size: 40px;
-    }
+    } 
 `
 
 export const Title = styled.h2`
     text-align: center;
     font-size: 50px;
     margin: 20px;
-    background: linear-gradient(45deg, yellow 20%, #FF69B4 50%, #FA8072 80%);
+    background: linear-gradient(45deg, yellow 20%, ${Colors.LightPink} 50%, ${Colors.SoftRed} 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: changeSize 1.5s linear infinite;
@@ -70,8 +71,8 @@ export const Form = styled.form`
     border: 4px solid transparent;
     border-radius: 10px;
     margin: 20px;
-    background-color: #292e66;
-    border-image: linear-gradient(#0B0E7F , #0B95DD);
+    background-color: ${Colors.DarkDesaturatedBlue};
+    border-image: linear-gradient(${Colors.DarkBlue} , ${Colors.VividBlue});
     border-image-slice: 1;
 
     @media (max-width: 600px) {
@@ -80,7 +81,7 @@ export const Form = styled.form`
 `
 
 export const Container = styled.div`
-    background-color: #101229;
+    background-color: ${Colors.VeryDarkBlue};
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -93,7 +94,7 @@ export const Container = styled.div`
 export const Text = styled.p`
     font-size: 34px;
     margin-bottom: 20px;
-    color: #00FA9A;
+    color: ${Colors.PureCyanLimeGreen};
     margin-left: 20px;
     margin-right: 20px;
 
@@ -149,19 +150,19 @@ export const Button = styled.button`
     display: flex;
 	justify-content: center ;
     position: relative;
-    color: #fff;
-    background: #0B95DD;
+    color: ${Colors.White};
+    background: ${Colors.VividBlue};
     z-index: 1; 
     overflow: hidden;
 
     :hover {
-        color: #FF69B4;
+        color: ${Colors.LightPink};
         text-decoration: none;
     }
 
     ::after {
         content: "";
-        background: #0B0E7F;
+        background: ${Colors.DarkBlue};
         position: absolute;
         z-index: -1;
         display: block;

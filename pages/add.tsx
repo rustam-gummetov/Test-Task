@@ -28,6 +28,7 @@ const AddPage = () => {
                 </Text>
                 <Input
                     required
+                    maxLength={10}
                     onChange={(op) => newOperator.name = op.target.value}
                 />
                 <Text>
@@ -36,7 +37,7 @@ const AddPage = () => {
                 <Input
                     required
                     type="link"
-                    pattern="https?:\/\/(www.)?(\w*\W*)*"
+                    pattern="https?:\/\/(www.)?(\w*\W*)*\.(jpg|png|jpeg|gif)"
                     placeholder="URL"
                     onChange={(url) => newOperator.pictureURL = url.target.value}
                 />
