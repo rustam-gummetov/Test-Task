@@ -12,9 +12,10 @@ body {
     display: flex;
     align-items: center;
     justify-content: center;
-    height: 100vh;
-    width: 100vw;
+    height: auto;
+    width: auto;
     background-color: rgb(214, 199, 199);
+    
 }
 
 a {

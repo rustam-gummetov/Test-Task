@@ -135,3 +135,24 @@ export const Button = styled.button`
         font-size: 20px;
     }
 `
+
+export const ButtonBack = styled.input`
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-self: flex-end;
+  background: transparent;
+  color: ${Colors.White};
+
+  :hover {
+    background: ${Colors.LimeGreen};
+    color: ${Colors.VeryDarkBlue};
+  }
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media (max-width: 600px) {
+      align-self: center;
+  }
+`

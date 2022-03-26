@@ -32,6 +32,9 @@ export const Title = styled.h2`
     text-align: center;
     font-size: 50px;
     margin: 20px;
+    margin-left: 70px;
+    margin-right: 70px;
+    word-break: break-all;
     background: linear-gradient(45deg, yellow 20%, ${Colors.LightPink} 50%, ${Colors.SoftRed} 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
@@ -89,6 +92,7 @@ export const Container = styled.div`
     border: 6px solid gray;
     border-radius: 20px;
     margin: 20px;
+    max-width: 1400px;
 `
 
 export const Text = styled.p`
@@ -194,4 +198,25 @@ export const Span = styled.span<{ mistake: boolean }>`
     color: ${(p) => p.mistake ? "red" : "green"};
     margin-bottom: 20px;
     font-size: 30px;
+`
+
+export const ButtonBack = styled.input`
+  font-size: 16px;
+  margin-bottom: 10px;
+  margin-left: 25px;
+  margin-right: 25px;
+  align-self: flex-end;
+  background: transparent;
+  color: ${Colors.White};
+
+  :hover {
+    background: ${Colors.LimeGreen};
+    color: ${Colors.VeryDarkBlue};
+  }
+  transition: 0.5s;
+  cursor: pointer;
+
+  @media (max-width: 600px) {
+      align-self: center;
+  }
 `

@@ -1,6 +1,7 @@
 import { NextRouter, useRouter } from 'next/router';
 import { FormEvent, useState } from 'react';
-import { Container, MainTitle, Title, Form, Text, InputMaskContainer, Input, Button, Span } from '../../styles/operatorStyles'
+import { text } from 'stream/consumers';
+import { Container, MainTitle, Title, Form, Text, InputMaskContainer, Input, Button, Span, ButtonBack } from '../../styles/operatorStyles'
 
 const Pay = () => {
     const router: NextRouter = useRouter();
@@ -29,7 +30,8 @@ const Pay = () => {
                 Терминал оплаты мобильного телефона
             </MainTitle>
             <Title>
-                Пополнение счета {operator}
+                Пополнение счета <br />
+                {operator}
             </Title>
             <Form onSubmit={(e) => toPay(e)}>
                 <Text>
@@ -65,6 +67,12 @@ const Pay = () => {
             <Span mistake={mistake}>
                 {message}
             </Span>
+            <ButtonBack
+                type="button"
+                alt="назад"
+                value="Назад"
+                onClick={() => router.push("/")}
+            />
         </Container>
     )
 }
