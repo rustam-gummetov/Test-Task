@@ -28,12 +28,13 @@ export const MainTitle = styled.h1`
     } 
 `
 
-export const Title = styled.h2`
+export const Title = styled.h2<{ marginTitle: number }>`
     text-align: center;
     font-size: 50px;
-    margin: 20px;
     margin-left: 70px;
     margin-right: 70px;
+    margin-top: ${(p) => p.marginTitle / 5}px;
+    margin-bottom: ${(p) => p.marginTitle / 5}px;
     word-break: break-all;
     background: linear-gradient(45deg, yellow 20%, ${Colors.LightPink} 50%, ${Colors.SoftRed} 80%);
     -webkit-background-clip: text;
@@ -64,6 +65,14 @@ export const Title = styled.h2`
 
     @media (max-width: 600px) {
         font-size: 30px;
+        margin-top: ${(p) => p.marginTitle / 4}px;
+        margin-bottom: ${(p) => p.marginTitle / 4}px;
+    }
+
+    @media (max-width: 400px) {
+        font-size: 30px;
+        margin-top: ${(p) => p.marginTitle / 3}px;
+        margin-bottom: ${(p) => p.marginTitle / 3}px;
     }
 `
 

@@ -11,6 +11,11 @@ const Pay = () => {
     const [sum, setSum] = useState("");
     const [mistake, setMistake] = useState(false);
 
+    let marginTitle: number = 0;
+    if (typeof (operator?.length) === 'number') {
+        marginTitle = operator.length;
+    }
+
     const toPay = (e: FormEvent) => {
         e.preventDefault();
         const random: number = Math.floor(Math.random() * 2);
@@ -29,7 +34,7 @@ const Pay = () => {
             <MainTitle>
                 Терминал оплаты мобильного телефона
             </MainTitle>
-            <Title>
+            <Title marginTitle={marginTitle}>
                 Пополнение счета <br />
                 {operator}
             </Title>
