@@ -1,3 +1,4 @@
+import Link from 'next/link';
 import { NextRouter, useRouter } from 'next/router';
 import { FormEvent } from 'react';
 import { operators } from '../operators/operators'
@@ -28,8 +29,6 @@ const AddPage = () => {
                 </Text>
                 <Input
                     required
-                    // maxLength={10}
-                    // pattern="/([^\s-]{5})([^\s-]{5})/ → $1&shy;$2"
                     pattern="^[^\s]+(\s.*)?$"
                     onChange={(op) => newOperator.name = op.target.value}
                 />
@@ -49,12 +48,11 @@ const AddPage = () => {
                     Создать
                 </Button>
             </Form>
-            <ButtonBack
-                type="button"
-                alt="назад"
-                value="Назад"
-                onClick={() => router.push("/")}
-            />
+            <Link href={"/"}>
+                <ButtonBack>
+                    Назад
+                </ButtonBack>
+            </Link>
         </Container>
     )
 }

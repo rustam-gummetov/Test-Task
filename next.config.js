@@ -2,11 +2,9 @@
 
 module.exports = {
   images: {
-    domains: ['promedianews.ru', 'xn--b1amnebili4i.xn--p1ai', 'skesov.ru'],
+    domains: ["media.rabota.ru", "yarnovosti.com", "skesov.ru"],
   },
   compiler: {
-    // ssr and displayName are configured by default
     styledComponents: true,
   },
 }
-

@@ -10,6 +10,7 @@ export const ImageContainer = styled.div`
   overflow: hidden;
   justify-content: center;
   align-items: center;
+  position: relative;
 
   @media (max-width: 840px) {
     width: 300px;

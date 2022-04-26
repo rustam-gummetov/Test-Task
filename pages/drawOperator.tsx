@@ -1,26 +1,22 @@
 import React from 'react'
-import styled from 'styled-components'
-import { NextRouter, useRouter } from 'next/router'
 import { ImageContainer, Img } from '../styles/drawOperatorStyles'
+import Link from 'next/link';
 
 interface Operator {
-  operator: {
-    name: string;
-    pictureURL: string;
-  }
+  name: string;
+  pictureURL: string;
 }
 
-const DrawOperator = ({ operator }: Operator) => {
-
-  const router: NextRouter = useRouter();
-
-  return (
-    <ImageContainer onClick={() => router.push("/pay/" + operator?.name)} key={operator?.name}>
+const DrawOperator = ({ name, pictureURL }: Operator) =>
+(
+  <Link href={"/pay/" + name}>
+    <ImageContainer>
       <Img
-        alt={operator?.name}
-        src={operator?.pictureURL}
+        alt={name}
+        src={pictureURL}
       />
     </ImageContainer>
-  )
-}
+  </Link>
+)
+
 export default DrawOperator;

@@ -14,4 +14,6 @@ export enum Colors {
     White = "#ffffff",
     SoftBlue = "#7B68EE",
     LightOrange = "#FF7F50",
+    Background = "#d6c7c7",
+    LightBlack = "#00000019"
 }

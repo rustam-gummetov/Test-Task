@@ -1,5 +1,6 @@
 import type { AppProps } from 'next/app'
 import { createGlobalStyle } from "styled-components";
+import { Colors } from "../colors/colors"
 
 const GlobalStyles = createGlobalStyle`
 html,
@@ -14,7 +15,7 @@ body {
     justify-content: center;
     height: auto;
     width: auto;
-    background-color: rgb(214, 199, 199);
+    background-color: ${Colors.Background};
     
 }
 

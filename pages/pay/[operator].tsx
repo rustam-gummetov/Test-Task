@@ -1,14 +1,12 @@
+import Link from 'next/link';
 import { NextRouter, useRouter } from 'next/router';
 import { FormEvent, useState } from 'react';
-import { text } from 'stream/consumers';
 import { Container, MainTitle, Title, Form, Text, InputMaskContainer, Input, Button, Span, ButtonBack } from '../../styles/operatorStyles'
 
 const Pay = () => {
     const router: NextRouter = useRouter();
     const { operator } = router.query;
     const [message, setMessage] = useState("");
-    const [telNumber, setTelNumber] = useState("");
-    const [sum, setSum] = useState("");
     const [mistake, setMistake] = useState(false);
 
     let marginTitle: number = 0;
@@ -50,7 +48,6 @@ const Pay = () => {
                     autoComplete="off"
                     required
                     placeholder="8(999)999-99-99"
-                    onChange={(num) => setTelNumber(num.target.value)}
                 />
                 <Text>
                     Введите сумму
@@ -61,7 +58,6 @@ const Pay = () => {
                     type="number"
                     min="1"
                     max="1000"
-                    onChange={(s) => setSum(s.target.value)}
                 />
                 <Button
                     type="submit"
@@ -72,12 +68,11 @@ const Pay = () => {
             <Span mistake={mistake}>
                 {message}
             </Span>
-            <ButtonBack
-                type="button"
-                alt="назад"
-                value="Назад"
-                onClick={() => router.push("/")}
-            />
+            <Link href={"/"}>
+                <ButtonBack>
+                    Назад
+                </ButtonBack>
+            </Link>
         </Container>
     )
 }

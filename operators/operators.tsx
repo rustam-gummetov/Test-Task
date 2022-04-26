@@ -5,7 +5,7 @@ export let operators = [
   },
   {
     name: "Beeline",
-    pictureURL: "https://ярновости.рф/gallery/news/2018/06/78552/logo_1200h550.jpg"
+    pictureURL: "https://yarnovosti.com/gallery/news/2018/06/78552/logo_1200h550.jpg"
   },
   {
     name: "Megafon",

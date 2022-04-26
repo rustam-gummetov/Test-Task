@@ -1,28 +1,24 @@
-import { NextRouter, useRouter } from 'next/router'
 import { operators } from '../operators/operators'
 import DrawOperator from './drawOperator'
 import { Container, Title, Grid, Button } from '../styles/indexStyles'
+import Link from 'next/link'
 
-const HomePage = () => {
-  const router: NextRouter = useRouter();
-
-  return (
-    <Container>
-      <Title>
-        Выберите оператора
-      </Title>
-      <Grid>
-        {operators.map(operator =>
-          <DrawOperator operator={operator} key={operator.name} />,
-        )}
-        <Button onClick={() =>
-          router.push({
-            pathname: "/add",
-          })}>
+const HomePage = () =>
+(
+  <Container>
+    <Title>
+      Выберите оператора
+    </Title>
+    <Grid>
+      {operators.map(operator =>
+        <DrawOperator name={operator.name} pictureURL={operator.pictureURL} key={operator.name} />,
+      )}
+      <Link href={"/add"}>
+        <Button>
           Добавить оператора
         </Button>
-      </Grid>
-    </Container>
-  )
-}
+      </Link>
+    </Grid>
+  </Container>
+)
 export default HomePage;

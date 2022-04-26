@@ -15,7 +15,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
     text-align: center;
     font-size: 50px;
-    color: white;
+    color: ${Colors.White};
     margin: 20px;
 
     background: linear-gradient(to right, ${Colors.SoftBlue} 20%, ${Colors.LightOrange} 40%, ${Colors.LightOrange} 60%, ${Colors.SoftBlue} 80%);
@@ -136,7 +136,7 @@ export const Button = styled.button`
     }
 `
 
-export const ButtonBack = styled.input`
+export const ButtonBack = styled.button`
   font-size: 16px;
   margin-bottom: 10px;
   margin-left: 25px;

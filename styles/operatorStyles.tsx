@@ -5,7 +5,7 @@ import { Colors } from "../colors/colors";
 export const MainTitle = styled.h1`
     text-align: center;
     font-size: 60px;
-    color: white;
+    color: ${Colors.White};
     margin: 20px;
     background: linear-gradient(to right, ${Colors.SoftViolet} 20%, ${Colors.LimeGreen} 40%, ${Colors.LimeGreen} 60%, ${Colors.SoftViolet} 80%);
     background-size: 200% auto;  
@@ -36,7 +36,7 @@ export const Title = styled.h2<{ marginTitle: number }>`
     margin-top: ${(p) => p.marginTitle / 5}px;
     margin-bottom: ${(p) => p.marginTitle / 5}px;
     word-break: break-all;
-    background: linear-gradient(45deg, yellow 20%, ${Colors.LightPink} 50%, ${Colors.SoftRed} 80%);
+    background: linear-gradient(45deg, ${Colors.Yellow} 20%, ${Colors.LightPink} 50%, ${Colors.SoftRed} 80%);
     -webkit-background-clip: text;
     -webkit-text-fill-color: transparent;
     animation: changeSize 1.5s linear infinite;
@@ -209,7 +209,7 @@ export const Span = styled.span<{ mistake: boolean }>`
     font-size: 30px;
 `
 
-export const ButtonBack = styled.input`
+export const ButtonBack = styled.button`
   font-size: 16px;
   margin-bottom: 10px;
   margin-left: 25px;

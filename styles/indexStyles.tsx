@@ -1,4 +1,4 @@
-import styled, { StyledComponent } from "styled-components"
+import styled from "styled-components"
 import { Colors } from "../colors/colors"
 
 export const Container = styled.div`
@@ -19,7 +19,7 @@ export const Container = styled.div`
 export const Title = styled.h1`
   text-align: center;
   font-size: 60px;
-  color: white;
+  color: ${Colors.White};
   margin-left: 20px;
   margin-right: 20px;
   background: linear-gradient(to left, ${Colors.Orange} 20%, ${Colors.Yellow} 40%, ${Colors.Yellow} 60%, ${Colors.Orange} 80%);
@@ -73,9 +73,9 @@ export const Button = styled.button`
   :hover {
     text-shadow: 
     0px 1px 0px ${Colors.DarkGrayishOrange},
-    0px 3px 10px rgba(0,0,0,0.15),
-    0px 5px 2px rgba(0,0,0,0.1),
-    0px 7px 30px rgba(0,0,0,0.1);
+    0px 3px 10px ${Colors.LightBlack},
+    0px 5px 2px ${Colors.LightBlack},
+    0px 7px 30px ${Colors.LightBlack};
   }
   cursor: pointer;
 
